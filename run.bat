@@ -9,7 +9,7 @@
 
     @echo on
     echo Running the script in Python...
-    python split.py
+    python main.py
     @echo off
 
     rem Deactivate the virtual environment

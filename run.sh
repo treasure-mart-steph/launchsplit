@@ -7,4 +7,4 @@ cd "$(dirname "$0")"
 . ./venv/bin/activate
 
 # Run the Python script
-python split.py
+python main.py

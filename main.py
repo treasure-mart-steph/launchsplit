@@ -3,14 +3,13 @@ import pandas as pd
 # Set the input filename
 filename = "input/launch.csv"
 
-# Read in the CSV file, skipping the first row
-print("Removing first row...")
-df = pd.read_csv(filename, skiprows=1)
+# Read in section 1
+print("Extracting section 1...")
+section1 = pd.read_csv(filename, skiprows=[0, 2], usecols=range(64, 116))
 
-# Split the data into two separate data frames
-print("Splitting file...")
-section1 = df.iloc[:, 63:115]  # columns 64 to 115
-section2 = df.iloc[:, 115:143]  # columns 116 to 143
+# Read in section 2
+print("Extracting section 2...")
+section2 = pd.read_csv(filename, skiprows=[0, 2], usecols=range(116, 144))
 
 # Save each data frame as a separate CSV file
 print("Saving sections...")

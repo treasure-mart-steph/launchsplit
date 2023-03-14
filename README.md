@@ -11,6 +11,10 @@ This is a script that removes the top row of a CSV and then extracts two chunks 
   - Clone this repository.
 - Install this software by running `install.bat`.
 
+# Installation on Linux
+
+- Run `source install.sh`.
+
 # Usage
 
 - Place your file as `launch.bat` under the `input` folder.
