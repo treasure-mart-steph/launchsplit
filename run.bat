@@ -1,13 +1,19 @@
 @echo off
 
-rem Change to the directory containing the script
-cd /d "%~dp0"
+(
+    rem Change to the directory containing the script
+    cd /d "%~dp0"
 
-rem Activate the virtual environment
-call .\venv\bin\activate.ps1
+    echo Activate the virtual environment
+    .\venv\Scripts\activate
 
-rem Run the Python script
-python split.py
+    @echo on
+    echo Running the script in Python...
+    python split.py
+    @echo off
 
-rem Deactivate the virtual environment
-deactivate
+    rem Deactivate the virtual environment
+    deactivate
+
+    timeout /t 2
+)
