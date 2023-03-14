@@ -7,8 +7,8 @@ filename = "input/launch.csv"
 df = pd.read_csv(filename, skiprows=1)
 
 # Split the data into two separate data frames
-section1 = df.iloc[:, 63:115] # columns 64 to 115
-section2 = df.iloc[:, 115:143] # columns 116 to 143
+section1 = df.iloc[:, 63:115]  # columns 64 to 115
+section2 = df.iloc[:, 115:143]  # columns 116 to 143
 
 # Save each data frame as a separate CSV file
 section1.to_csv('output/the_launches.csv', index=False)
