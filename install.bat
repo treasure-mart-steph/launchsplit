@@ -3,13 +3,17 @@
 rem Create a new virtual environment
 python -m venv venv
 
-rem Activate the virtual environment
+echo Activating the virtual environment
 .\venv\Scripts\activate
 
-rem Install required packages
+echo Installing required packages...
+@echo on
 pip install -r requirements.txt
+@echo off
 
 rem Deactivate the virtual environment
 deactivate
 
-timeout /t 10
+echo INSTALLATION COMPLETE!
+
+timeout /t 5

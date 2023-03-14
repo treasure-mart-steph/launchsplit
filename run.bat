@@ -15,5 +15,5 @@
     rem Deactivate the virtual environment
     deactivate
 
-    timeout /t 2
+    timeout /t 1
 )
