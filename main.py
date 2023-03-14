@@ -9,7 +9,7 @@ section1 = pd.read_csv(filename, skiprows=[0, 2], usecols=range(64, 116))
 
 # Read in section 2
 print("Extracting section 2...")
-section2 = pd.read_csv(filename, skiprows=[0, 2], usecols=range(116, 144))
+section2 = pd.read_csv(filename, skiprows=[0, 2], usecols=range(116, 143))
 
 # Save each data frame as a separate CSV file
 print("Saving sections...")
